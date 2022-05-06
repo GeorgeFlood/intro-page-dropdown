@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Manrope&family=Oswald&family=Poppins:ital,wght@1,200&family=Source+Sans+Pro:wght@300&family=Space+Mono:ital@1&display=swap');
+
+*::before,
+*::after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    overflow: hidden;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Epilogue', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* --MOBILE FIRST-- */
+
+@media only screen and (min-width: 360px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1.5rem 1.5rem;
+    }
+
+    header h1 {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    .desktop-list,
+    .header-buttons {
+        display: none;
+    }
+
+
+    .hero {
+        margin-top: 3rem;
+        background-image: url(imgs/image-hero-mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        min-height: 43vh;
+        width: 100%;
+
+    }
+
+    .main {
+        margin-top: 4rem;
+        text-align: center;
+    }
+
+    .main h2 {
+        font-size: 4rem;
+    }
+
+    .main p {
+        margin: 2rem 1rem;
+        font-size: 2rem;
+        color: rgba(63, 63, 63, 0.8);
+    }
+
+    .main button {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: white;
+        background-color: black;
+        border-radius: 1.5rem;
+        cursor: pointer;
+        height: 5rem;
+        width: 13rem;
+    }
+
+    footer {
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* --DESKTOP SCREENS-- */
+
+@media only screen and (min-width: 1440px) {
+    header {}
+
+    .desktop-list,
+    .header-buttons {
+        display: block;
+    }
+
+    header svg {
+        display: none;
+    }
+
+}
