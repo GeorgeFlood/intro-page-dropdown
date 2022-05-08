@@ -45,7 +45,6 @@ html {
         background-size: 100% 100%;
         min-height: 43vh;
         width: 100%;
-
     }
 
     .main {
@@ -87,6 +86,7 @@ html {
 @media only screen and (min-width: 1440px) {
     header {}
 
+
     .desktop-list,
     .header-buttons {
         display: block;
@@ -96,4 +96,95 @@ html {
         display: none;
     }
 
+    .desktop-list,
+    .header-buttons {
+        display: flex;
+        margin-top: 1rem;
+    }
+
+    .desktop-list {
+        margin-right: 53rem;
+    }
+
+
+    .arrow::after {
+        content: url(imgs/icon-arrow-down.svg);
+        padding-left: .5rem;
+    }
+
+    .header-buttons button {
+        margin-right: 3rem;
+        font-size: 1.6rem;
+        color: rgba(70, 69, 69, 0.8);
+        font-weight: bolder;
+        background-color: white;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .header-buttons button:last-child {
+        border: .15rem solid black;
+        padding: .5rem 2rem;
+        border-radius: 1rem;
+    }
+
+    .desktop-list li {
+        margin-right: 4rem;
+        align-items: flex-start;
+        font-size: 1.6rem;
+        font-weight: bolder;
+        color: rgba(70, 69, 69, 0.6);
+        cursor: pointer;
+    }
+
+    .desktop-list li:hover,
+    .header-buttons button:hover {
+        color: rgb(36, 35, 35);
+        transition: all .5s;
+    }
+
+    .hero {
+        display: none;
+    }
+
+    .desktop-hero {
+        display: inline-block;
+        position: relative;
+        background-image: url(imgs/image-hero-desktop.png);
+        left: 54%;
+        width: 38%;
+        height: 73vh;
+    }
+
+    .main {
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        margin-right: 50%;
+        bottom: 50rem;
+        margin-left: 8rem;
+    }
+
+    .main h2 {
+        font-size: 8rem;
+        text-align: left;
+        margin-right: 16rem;
+    }
+
+    .main p {
+        margin: 5rem 0;
+        margin-right: 20rem;
+    }
+
+    footer {
+        display: inline-block;
+        position: relative;
+        bottom: 50rem;
+        left: 8rem;
+    }
+
+    footer svg {
+        margin-right: 7rem;
+    }
 }
